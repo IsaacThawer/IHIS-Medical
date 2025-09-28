@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Integrated Health Insurance Services</title>
+
+  <!-- Your shared site styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- (Optional) Keep Tailwind for the main content layout -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Translate loader (same as other pages) -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,es',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
+  <noscript>
+    <style>
+      .nojs-note { display:block; padding:0.75rem; margin:0.5rem 0; background:#fffbeb; border:1px solid #f59e0b; color:#92400e; border-radius:0.5rem; }
+    </style>
+  </noscript>
+</head>
+<body class="body">
+  <!-- Header (IDENTICAL to your shared navbar) -->
+  <header class="header" role="banner">
+    <div class="header-container">
+      <div class="brand">
+        <img src="Company-Logo.png" alt="Company Logo" class="logo-image" />
+        <span class="logo">Integrated Health Insurance Services</span>
+      </div>
+
+      <div class="lang-select-wrapper" aria-label="Language selector">
+        <button type="button" class="lang-button" data-lang="es">Español</button>
+        <button type="button" class="lang-button" data-lang="reset">Reset</button>
+      </div>
+
+      <button class="hamburger" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+        <svg class="hamburger-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <nav id="site-nav" class="nav" role="navigation" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="schedule.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <noscript>
+    <div class="main" role="note">
+      <p class="nojs-note">JavaScript is disabled. Language switching and navigation enhancements require JavaScript.</p>
+    </div>
+  </noscript>
+
+<!-- MAIN CONTENT (kept your Tailwind layout) -->
+<main class="max-w-7xl mx-auto px-4 py-12">
+    <!-- HERO SECTION -->
+    <section class="bg-teal-700 text-white py-20 rounded-lg shadow-lg mb-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
+            <div class="md:w-1/2 flex justify-center order-1 md:order-none">
+                <img src="Guido-Bucheli.webp" alt="Our Team" class="w-full max-w-sm rounded-lg shadow-lg" />
+            </div>
+            <div class="md:w-1/2 order-2 md:order-none">
+                <h1 class="text-5xl font-bold leading-tight mb-6">
+                   Meet <b>Guido Bucheli</b>
+                </h1>
+                <p class="text-lg mb-8">
+                    Guido has been serving the insurance needs of families and businesses for over 27 years. As one of the founders of Integrated Health Insurance Services LLC, he now focuses on Medicare, Covered California, and retirement protection products. Guido is bilingual (English/Spanish) and passionate about helping the Hispanic community understand their options with confidence. He holds a Health & Life License (CA License #0B99537) and an AHIP Medicare Certification.
+                </p>
+            </div>
+        </div>
+
+        <!-- NEW PERSON SECTION (photo above text on mobile, text left on desktop) -->
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 mt-12">
+            <!-- image FIRST on mobile -->
+            <div class="md:w-1/2 flex justify-center order-1 md:order-2">
+                <img src="New-Person-Photo.webp" alt="New Team Member" class="w-full max-w-sm rounded-lg shadow-lg" />
+            </div>
+            <!-- text SECOND on mobile -->
+            <div class="md:w-1/2 order-2 md:order-1 pl-12 md:pl-20">
+                <h2 class="text-5xl font-bold leading-tight mb-6">
+                    Meet Nora Marlene Rodriguez
+                </h2>
+                <p class="text-lg mb-8">
+                    Nora Marlene Rodriguez brings 10 years of experience in client support and health services. She is committed to creating a welcoming environment for every client and ensuring that each person feels comfortable and confident in their healthcare decisions. BA in communications, CLMS Leave management, AHIP Medicare certification  and Health California License # 2081089.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US DETAILS -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div class="bg-white shadow rounded-lg p-8 flex flex-col justify-center">
+            <h2 class="text-2xl font-bold mb-4">Our Story</h2>
+            <p class="text-gray-700 mb-4">
+              At Integrated Health Insurance Services LLC, we believe navigating health insurance should be simple and stress-free. After more than 25 years of experience in the insurance industry, We realized how overwhelming Medicare, Covered California, and other health programs can be for families—especially within the Hispanic community. That’s why we created a bilingual, community-first agency focused on education, trust, and personalized service. Our mission is to make sure you not only have the right coverage, but also understand it. This business was born out of a desire to help people protect what matters most: their health, their family, and their financial peace of mind.
+
+            </p>
+            <p class="text-gray-700">
+                <!-- Add information -->
+            </p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-8 flex flex-col justify-center">
+            <h2 class="text-2xl font-bold mb-4">Why Choose Us?</h2>
+            <ul class="list-inside text-gray-700 space-y-2">
+                <li class="font-semibold text-teal-700 bg-teal-50 rounded px-2 py-1 flex items-start">
+                    <span class="mr-2 text-xl">★</span>
+                    With over 25 years of insurance experience, our bilingual team proudly serves the Woodland, CA community and beyond. We specialize in guiding you through complex insurance decisions with a clear, compassionate approach.
+                </li>
+                <li class="list-disc" style="list-style-type: circle;">Local expertise and community focus</li>
+                <li class="list-disc" style="list-style-type: circle;">Transparent, unbiased advice</li>
+                <li class="list-disc" style="list-style-type: circle;">Ongoing support throughout your Medicare journey</li>
+            </ul>
+        </div>
+    </section>
+</main>
+<!-- Footer -->
+  <footer class="footer">
+    © <span id="year"></span> Integrated Health Insurance Services • Woodland, CA
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Year stamp
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    (function () {
+      const btn = document.querySelector('.hamburger');
+      const nav = document.getElementById('site-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('show');
+      });
+    })();
+
+    // Language buttons logic (Español + Reset)
+    (function(){
+      const KEY = 'preferred_lang';
+      const PAGE_LANG = 'en'; // keep in sync with Google config
+      const COOKIE_NAME = 'googtrans';
+
+      function setCookie(name, value) {
+        const expires = new Date(Date.now() + 365*24*60*60*1000).toUTCString();
+        document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+        const parts = location.hostname.split('.');
+        if (parts.length > 1) {
+          const root = '.' + parts.slice(-2).join('.');
+          document.cookie = `${name}=${value}; expires=${expires}; path=/; domain=${root}`;
+        }
+      }
+      function clearCookie(name) {
+        const expires = 'Thu, 01 Jan 1970 00:00:00 GMT';
+        document.cookie = `${name}=; expires=${expires}; path=/`;
+        const parts = location.hostname.split('.');
+        if (parts.length > 1) {
+          const root = '.' + parts.slice(-2).join('.');
+          document.cookie = `${name}=; expires=${expires}; path=/; domain=${root}`;
+        }
+      }
+
+      function getTranslateSelect() {
+        return document.querySelector('#google_translate_element select.goog-te-combo');
+      }
+
+      function applyLanguage(lang) {
+        if (lang === 'reset') {
+          clearCookie(COOKIE_NAME);
+          localStorage.removeItem(KEY);
+          const sel = getTranslateSelect();
+          if (sel) {
+            sel.value = PAGE_LANG;
+            sel.dispatchEvent(new Event('change'));
+            setTimeout(() => location.reload(), 200);
+          } else {
+            location.reload();
+          }
+          return;
+        }
+
+        const official = getTranslateSelect();
+        if (official) {
+          if (official.value !== lang) {
+            official.value = lang;
+            official.dispatchEvent(new Event('change'));
+          }
+          localStorage.setItem(KEY, lang);
+          setCookie(COOKIE_NAME, `/${PAGE_LANG}/${lang}`);
+          return;
+        }
+
+        // Fallback if widget never becomes available
+        setCookie(COOKIE_NAME, `/${PAGE_LANG}/${lang}`);
+        localStorage.setItem(KEY, lang);
+        location.reload();
+      }
+
+      function whenTranslateReady(cb) {
+        const tryNow = () => {
+          const sel = getTranslateSelect();
+          if (sel) { cb(sel); return true; }
+          return false;
+        };
+        if (tryNow()) return;
+        const obs = new MutationObserver(() => { if (tryNow()) obs.disconnect(); });
+        obs.observe(document.documentElement, { childList: true, subtree: true });
+      }
+
+      function updateButtonsUI(current) {
+        document.querySelectorAll('.lang-button').forEach(btn => {
+          const active = (current !== 'en' && btn.dataset.lang === current);
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        // Wire up buttons
+        document.querySelectorAll('.lang-button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            applyLanguage(btn.dataset.lang);
+            if (btn.dataset.lang === 'reset') {
+              updateButtonsUI('en');
+            } else {
+              updateButtonsUI(btn.dataset.lang);
+            }
+          });
+        });
+
+        // Respect saved choice
+        whenTranslateReady(() => {
+          const saved = localStorage.getItem(KEY);
+          if (saved && saved !== 'en') {
+            applyLanguage(saved);
+            updateButtonsUI(saved);
+          } else {
+            updateButtonsUI('en');
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

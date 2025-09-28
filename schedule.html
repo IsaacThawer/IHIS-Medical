@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Schedule your FREE consultation today!</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Translate loader -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,es',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
+  <noscript>
+    <style>
+      .nojs-note { display:block; padding:0.75rem; margin:0.5rem 0; background:#fffbeb; border:1px solid #f59e0b; color:#92400e; border-radius:0.5rem; }
+    </style>
+  </noscript>
+</head>
+<body class="body">
+  <!-- Header -->
+  <header class="header" role="banner">
+  <div class="header-container">
+    <div class="brand">
+      <img src="Company-Logo.png" alt="Company Logo" class="logo-image" />
+      <span class="logo">Integrated Health Insurance Services</span>
+    </div>
+
+    <div class="lang-select-wrapper" aria-label="Language selector">
+      <button type="button" class="lang-button" data-lang="es">Español</button>
+      <button type="button" class="lang-button" data-lang="reset">Reset</button>
+    </div>
+
+    <button class="hamburger" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+  <svg class="hamburger-icon" viewBox="0 0 24 24" aria-hidden="true"
+       fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+</button>
+
+
+    <!-- moved in here -->
+    <nav id="site-nav" class="nav" role="navigation" aria-label="Primary">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link" href="schedule.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <noscript>
+    <div class="main" role="note">
+      <p class="nojs-note">JavaScript is disabled. Language switching and booking enhancements require JavaScript.</p>
+    </div>
+  </noscript>
+
+  <!-- Main -->
+  <main class="main" role="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title" style="font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif; font-weight: 700; font-style: italic;">
+                        Schedule your <em>FREE</em>  consultation today!
+          </h1>
+          <p class="hero-subtitle">
+            Fill out the preferred location and reserve a time time. You’ll be redirected to our secure Google booking page.
+          </p>
+          <!-- CHANGE GOOGLE APPOINTMENTS LINK TO SUIT GUDIO USE -->
+          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3FurIpcwSwjVFPqcTAjE2Jq9ZJ41wQY6yzlBFPc_l4fWW7_mYfV0nxJ4oTMg7a5xbbItAJtFrk" class="cta-button">See Locations &amp; Times</a>
+        </div>
+        <div class="hero-image">
+          <img src="Guido-Bucheli.webp" alt="Friendly staff assisting with appointments" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations / Booking Cards -->
+    <section id="locations" class="services two-locations" aria-labelledby="locations-title">
+      <h2 id="locations-title" class="sr-only">Locations</h2>
+
+      <!-- Location A -->
+       <article class="service-card" aria-labelledby="loc-a-title">        <h3 id="loc-a-title">Office</h3>
+        <p>123 Main St, Woodland, CA 95695</p>
+        <p><strong>Hours:</strong> Mon–Fri, 9:00 AM–5:00 PM</p>
+        <p class="card-note">Book here for appointments at our Downtown location.</p>
+        <a class="cta-button" target="_blank" rel="noopener"
+           href="https://calendar.google.com/calendar/u/0/appointments/schedules/REPLACE_WITH_DOWNTOWN_LINK">
+          Book Downtown
+        </a>
+        <div class="card-links">
+          <a class="nav-link" target="_blank" rel="noopener"
+             href="https://maps.google.com/?q=123+Main+St+Woodland+CA+95695">Open in Google Maps →</a>
+        </div>
+      </article>
+    </section> 
+
+    <!-- Quick Info / Policies -->
+    <section class="service-card stack-gap">
+      <h3>What to Bring</h3>
+      <p class="hero-subtitle">
+        <li> Your red, white, and blue Medicare card (if already enrolled).</li>
+        <li>A list of your current medications (name, dosage, and frequency).</li> 
+        <li>Your preferred doctors and specialists (names & locations).</li>
+        <li>Health insurance cards (if you currently have other coverage, e.g., employer, union, Medi-Cal).</li>
+        <li>Household income information (if applying for Covered California or extra help programs).</li>
+        <li>A valid photo ID.</li>
+        <li>Any letters or notices you’ve received from Medicare, Social Security, or your insurance company.</li>
+       </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="service-card stack-gap">
+      <h3>Need Help Booking?</h3>
+      <p>
+        Email:<a class="nav-link">Guido.Bucheli@IHI-Services.com</a> ·
+        Phone: <a class="nav-link" href="tel:+15305551234">(530)-650-9218</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © <span id="year"></span> Integrated Health Insurance Services • Woodland, CA
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Year stamp
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    (function () {
+      const btn = document.querySelector('.hamburger');
+      const nav = document.getElementById('site-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('show');
+      });
+    })();
+
+    // Language buttons logic (Español + Reset)
+    (function(){
+      const KEY = 'preferred_lang';
+      const PAGE_LANG = 'en'; // keep in sync with Google config
+      const COOKIE_NAME = 'googtrans';
+
+      function setCookie(name, value) {
+        const expires = new Date(Date.now() + 365*24*60*60*1000).toUTCString();
+        document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+        const parts = location.hostname.split('.');
+        if (parts.length > 1) {
+          const root = '.' + parts.slice(-2).join('.');
+          document.cookie = `${name}=${value}; expires=${expires}; path=/; domain=${root}`;
+        }
+      }
+      function clearCookie(name) {
+        const expires = 'Thu, 01 Jan 1970 00:00:00 GMT';
+        document.cookie = `${name}=; expires=${expires}; path=/`;
+        const parts = location.hostname.split('.');
+        if (parts.length > 1) {
+          const root = '.' + parts.slice(-2).join('.');
+          document.cookie = `${name}=; expires=${expires}; path=/; domain=${root}`;
+        }
+      }
+
+      function getTranslateSelect() {
+        return document.querySelector('#google_translate_element select.goog-te-combo');
+      }
+
+      function applyLanguage(lang) {
+        if (lang === 'reset') {
+          clearCookie(COOKIE_NAME);
+          localStorage.removeItem(KEY);
+          const sel = getTranslateSelect();
+          if (sel) {
+            sel.value = PAGE_LANG;
+            sel.dispatchEvent(new Event('change'));
+            setTimeout(() => location.reload(), 200);
+          } else {
+            location.reload();
+          }
+          return;
+        }
+
+        const official = getTranslateSelect();
+        if (official) {
+          if (official.value !== lang) {
+            official.value = lang;
+            official.dispatchEvent(new Event('change'));
+          }
+          localStorage.setItem(KEY, lang);
+          setCookie(COOKIE_NAME, `/${PAGE_LANG}/${lang}`);
+          return;
+        }
+
+        // Fallback if widget never becomes available
+        setCookie(COOKIE_NAME, `/${PAGE_LANG}/${lang}`);
+        localStorage.setItem(KEY, lang);
+        location.reload();
+      }
+
+      function whenTranslateReady(cb) {
+        const tryNow = () => {
+          const sel = getTranslateSelect();
+          if (sel) { cb(sel); return true; }
+          return false;
+        };
+        if (tryNow()) return;
+        const obs = new MutationObserver(() => { if (tryNow()) obs.disconnect(); });
+        obs.observe(document.documentElement, { childList: true, subtree: true });
+      }
+
+      function updateButtonsUI(current) {
+        document.querySelectorAll('.lang-button').forEach(btn => {
+          const active = (current !== 'en' && btn.dataset.lang === current);
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        // Wire up buttons
+        document.querySelectorAll('.lang-button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            applyLanguage(btn.dataset.lang);
+            if (btn.dataset.lang === 'reset') {
+              updateButtonsUI('en');
+            } else {
+              updateButtonsUI(btn.dataset.lang);
+            }
+          });
+        });
+
+        // Respect saved choice
+        whenTranslateReady(() => {
+          const saved = localStorage.getItem(KEY);
+          if (saved && saved !== 'en') {
+            applyLanguage(saved);
+            updateButtonsUI(saved);
+          } else {
+            updateButtonsUI('en');
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

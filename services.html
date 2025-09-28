@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services | Integrated Health Insurance Services</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Translate (same loader as other pages) -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,es',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
+  <noscript>
+    <style>
+      .nojs-note { display:block; padding:0.75rem; margin:0.5rem 0; background:#fffbeb; border:1px solid #f59e0b; color:#92400e; border-radius:0.5rem; }
+    </style>
+  </noscript>
+</head>
+<body class="body" id="top">
+  <!-- Header (IDENTICAL across pages) -->
+<header class="header" role="banner">
+    <div class="header-container">
+      <div class="brand">
+        <img src="Company-Logo.png" alt="Company Logo" class="logo-image" />
+        <span class="logo">Integrated Health Insurance Services</span>
+      </div>
+
+      <div class="lang-select-wrapper" aria-label="Language selector">
+        <button type="button" class="lang-button" data-lang="es">Español</button>
+        <button type="button" class="lang-button" data-lang="reset">Reset</button>
+      </div>
+
+      <button class="hamburger" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+        <svg class="hamburger-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <nav id="site-nav" class="nav" role="navigation" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="schedule.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <noscript>
+    <div class="main" role="note">
+      <p class="nojs-note">JavaScript is disabled. Language switching and navigation enhancements require JavaScript.</p>
+    </div>
+  </noscript>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Explore Our Services</h1>
+          <p class="hero-subtitle">
+            Clear guidance for Medicare, Covered California, Dental &amp; Vision, Cancer Insurance, Final Expense, and Annuities.
+          </p>
+          <a href="schedule.html" class="cta-button">Schedule a Free Consultation</a>
+        </div>
+        <div class="hero-image">
+          <img src="Guido-Bucheli.webp" alt="Advisor helping client choose a plan" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="services" aria-labelledby="quick-links-title">
+      <h2 id="quick-links-title" class="sr-only">Quick Links</h2>
+      <div class="service-card stack-gap mobile-only">
+        <h3>Jump to a Service</h3>
+        <p class="card-note">Choose a topic to learn more, compare options, and see FAQs.</p>
+        <div class="card-links">
+          <a class="nav-link" href="#medicare">Medicare</a>
+          <a class="nav-link" href="#covered-california">Covered California</a>
+          <a class="nav-link" href="#dental-vision">Dental &amp; Vision</a>
+          <a class="nav-link" href="#cancer-insurance">Cancer Insurance</a>
+          <a class="nav-link" href="#final-expense">Final Expense</a>
+          <a class="nav-link" href="#annuities">Annuities</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Sections -->
+    <section class="services" aria-labelledby="services-detail-title">
+      <h2 id="services-detail-title" class="sr-only">Service Details</h2>
+
+      <!-- Medicare -->
+      <article class="service-card" id="medicare" aria-labelledby="medicare-title">
+        <h3 id="medicare-title">Medicare</h3>
+        <p>Clear explanations, enrollment help, and plan comparisons (Parts A, B, C &amp; D).</p>
+        <ul class="service-bullets">
+          <li>Eligibility &amp; timelines (IEP, GEP, SEP)</li>
+          <li>Original Medicare vs. Medicare Advantage</li>
+          <li>Prescription coverage (Part D) &amp; formularies</li>
+          <li>Medigap plan comparisons</li>
+        </ul>
+        <div class="card-links">
+          <a class="nav-link" href="schedule.html">Book now →</a>
+          <a class="nav-link" target="_blank" rel="noopener" href="https://www.medicare.gov/basics/get-started-with-medicare/medicare-faqs">FAQ ↗</a>
+        </div>
+      </article>
+
+      <!-- Covered California -->
+      <article class="service-card" id="covered-california" aria-labelledby="cc-title">
+        <h3 id="cc-title">Covered California</h3>
+        <p>We help individuals and families find affordable health coverage.</p>
+        <ul class="service-bullets">
+          <li>Subsidy eligibility &amp; application support</li>
+          <li>Plan metal levels (Bronze–Platinum)</li>
+          <li>Network &amp; provider lookups</li>
+          <li>Special Enrollment guidance</li>
+        </ul>
+        <div class="card-links">
+          <a class="nav-link" href="schedule.html">Book now →</a>
+          <a class="nav-link" target="_blank" rel="noopener" href="https://www.coveredca.com/faq/">FAQ ↗</a>
+        </div>
+      </article>
+
+      <!-- Dental & Vision -->
+      <article class="service-card" id="dental-vision" aria-labelledby="dv-title">
+        <h3 id="dv-title">Dental &amp; Vision Insurance</h3>
+        <p>Protect your smile and your sight with plans that fit your needs.</p>
+        <ul class="service-bullets">
+          <li>HMO vs. PPO plan comparisons</li>
+          <li>Waiting periods &amp; annual maximums</li>
+          <li>Provider network checks</li>
+          <li>Frames, lenses, and exam benefits</li>
+        </ul>
+        <div class="card-links">
+          <a class="nav-link" href="schedule.html">Book now →</a>
+          <a class="nav-link" target="_blank" rel="noopener" href="https://www.healthcare.gov/dental-coverage/dental-insurance-faqs/">Dental FAQ ↗</a>
+          <a class="nav-link" target="_blank" rel="noopener" href="https://www.vsp.com/faqs">Vision FAQ ↗</a>
+        </div>
+      </article>
+
+      <!-- Cancer Insurance -->
+      <article class="service-card" id="cancer-insurance" aria-labelledby="cancer-title">
+        <h3 id="cancer-title">Cancer Insurance</h3>
+        <p>Supplemental protection for unexpected medical costs.</p>
+        <ul class="service-bullets">
+          <li>Lump-sum &amp; benefit-trigger options</li>
+          <li>Coordination with existing coverage</li>
+          <li>Waiting periods &amp; exclusions explained</li>
+          <li>Premium &amp; benefit trade-offs</li>
+        </ul>
+        <div class="card-links">
+          <a class="nav-link" href="schedule.html">Book now →</a>
+          <a class="nav-link" target="_blank" rel="noopener" href="https://www.cancer.org/cancer/managing-cancer/financial-insurance-matters/understanding-health-insurance.html">FAQ ↗</a>
+        </div>
+      </article>
+
+      <!-- Final Expense -->
+      <article class="service-card" id="final-expense" aria-labelledby="fe-title">
+        <h3 id="fe-title">Final Expense Insurance</h3>
+        <p>Affordable coverage for end-of-life expenses.</p>
+        <ul class="service-bullets">
+          <li>Immediate vs. graded benefit options</li>
+          <li>Simplified issue &amp; health questions</li>
+          <li>Benefit amounts &amp; affordability</li>
+          <li>Beneficiary setup guidance</li>
+        </ul>
+        <div class="card-links">
+          <a class="nav-link" href="schedule.html">Book now →</a>
+          <a class="nav-link" target="_blank" rel="noopener" href="https://www.policygenius.com/final-expense-insurance/">FAQ ↗</a>
+        </div>
+      </article>
+
+      <!-- Annuities -->
+      <article class="service-card" id="annuities" aria-labelledby="annuity-title">
+        <h3 id="annuity-title">Annuities</h3>
+        <p>Retirement income options with guaranteed growth and security.</p>
+        <ul class="service-bullets">
+          <li>Fixed, indexed, and immediate annuities</li>
+          <li>Fees, riders, and surrender periods</li>
+          <li>Tax considerations &amp; RMDs</li>
+          <li>Lifetime income strategies</li>
+        </ul>
+        <div class="card-links">
+          <a class="nav-link" href="schedule.html">Book now →</a>
+          <a class="nav-link" target="_blank" rel="noopener" href="https://content.naic.org/consumer/consumer-faqs-annuities">FAQ ↗</a>
+        </div>
+      </article>
+
+      <!-- Back to top -->
+      <div class="service-card stack-gap mobile-only">
+        <div class="card-links">
+          <a class="nav-link" href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to top ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © <span id="year"></span> Integrated Health Insurance Services • Woodland, CA
+  </footer>
+
+  <!-- Scripts (same behavior as other pages) -->
+  <script>
+    // Year stamp
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    (function () {
+      const btn = document.querySelector('.hamburger');
+      const nav = document.getElementById('site-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('show');
+      });
+    })();
+
+    // Language buttons logic
+    (function(){
+      const KEY = 'preferred_lang';
+      const PAGE_LANG = 'en';
+      const COOKIE_NAME = 'googtrans';
+
+      function setCookie(name, value) {
+        const expires = new Date(Date.now() + 365*24*60*60*1000).toUTCString();
+        document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+        const parts = location.hostname.split('.');
+        if (parts.length > 1) {
+          const root = '.' + parts.slice(-2).join('.');
+          document.cookie = `${name}=${value}; expires=${expires}; path=/; domain=${root}`;
+        }
+      }
+      function clearCookie(name) {
+        const expires = 'Thu, 01 Jan 1970 00:00:00 GMT';
+        document.cookie = `${name}=; expires=${expires}; path=/`;
+        const parts = location.hostname.split('.');
+        if (parts.length > 1) {
+          const root = '.' + parts.slice(-2).join('.');
+          document.cookie = `${name}=; expires=${expires}; path=/; domain=${root}`;
+        }
+      }
+
+      function getTranslateSelect() {
+        return document.querySelector('#google_translate_element select.goog-te-combo');
+      }
+
+      function applyLanguage(lang) {
+        if (lang === 'reset') {
+          clearCookie(COOKIE_NAME);
+          localStorage.removeItem(KEY);
+          const sel = getTranslateSelect();
+          if (sel) {
+            sel.value = PAGE_LANG;
+            sel.dispatchEvent(new Event('change'));
+            setTimeout(() => location.reload(), 200);
+          } else {
+            location.reload();
+          }
+          return;
+        }
+
+        const official = getTranslateSelect();
+        if (official) {
+          if (official.value !== lang) {
+            official.value = lang;
+            official.dispatchEvent(new Event('change'));
+          }
+          localStorage.setItem(KEY, lang);
+          setCookie(COOKIE_NAME, `/${PAGE_LANG}/${lang}`);
+          return;
+        }
+
+        // Fallback if widget never becomes available
+        setCookie(COOKIE_NAME, `/${PAGE_LANG}/${lang}`);
+        localStorage.setItem(KEY, lang);
+        location.reload();
+      }
+
+      function whenTranslateReady(cb) {
+        const tryNow = () => {
+          const sel = getTranslateSelect();
+          if (sel) { cb(sel); return true; }
+          return false;
+        };
+        if (tryNow()) return;
+        const obs = new MutationObserver(() => { if (tryNow()) obs.disconnect(); });
+        obs.observe(document.documentElement, { childList: true, subtree: true });
+      }
+
+      function updateButtonsUI(current) {
+        document.querySelectorAll('.lang-button').forEach(btn => {
+          const active = (current !== 'en' && btn.dataset.lang === current);
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.lang-button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            applyLanguage(btn.dataset.lang);
+            updateButtonsUI(btn.dataset.lang === 'reset' ? 'en' : btn.dataset.lang);
+          });
+        });
+
+        whenTranslateReady(() => {
+          const saved = localStorage.getItem(KEY);
+          if (saved && saved !== 'en') {
+            applyLanguage(saved);
+            updateButtonsUI(saved);
+          } else {
+            updateButtonsUI('en');
+          }
+        });
+      });
+    })();
+  </script>
+
+  <!-- Anchor Script -->
+  <script>
+  // Dynamically set the header height as the anchor offset (keeps CSS in sync)
+  (function setAnchorOffset() {
+    function update() {
+      const header = document.querySelector('.header');
+      if (!header) return;
+      const extra = 8; // a little breathing room
+      document.documentElement.style.setProperty('--anchor-offset', (header.offsetHeight + extra) + 'px');
+    }
+    update();
+    window.addEventListener('resize', update);
+    document.addEventListener('DOMContentLoaded', update);
+  })();
+
+  // Optional: center short targets on mobile
+  (function centerTargetsOnMobile() {
+    const isMobile = () => window.matchMedia('(max-width: 767px)').matches;
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      const href = a.getAttribute('href');
+      if (!href || href === '#top') return; // allow your Back-to-top to work normally
+
+      a.addEventListener('click', (e) => {
+        const id = href.slice(1);
+        const target = document.getElementById(id);
+        if (!target) return;
+
+        // Only override on mobile; otherwise let default behavior happen
+        if (isMobile()) {
+          e.preventDefault();
+
+          // If the target is shorter than ~80% of the viewport, center it; otherwise align to top.
+          const shortEnough = target.offsetHeight < window.innerHeight * 0.8;
+
+          if (shortEnough) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            // align to top but respect the sticky header offset
+            const y = target.getBoundingClientRect().top + window.pageYOffset
+                      - parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--anchor-offset') || 0);
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+
+          // Keep the URL hash updated
+          history.pushState(null, '', href);
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

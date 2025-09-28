@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home Page | Integrated Health Insurance Services</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Translate loader (same as schedule page) -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,es',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
+  <noscript>
+    <style>
+      .nojs-note { display:block; padding:0.75rem; margin:0.5rem 0; background:#fffbeb; border:1px solid #f59e0b; color:#92400e; border-radius:0.5rem; }
+    </style>
+  </noscript>
+</head>
+<body class="body">
+  <!-- Header (IDENTICAL to the first page) -->
+  <header class="header" role="banner">
+    <div class="header-container">
+      <div class="brand">
+        <img src="Company-Logo.png" alt="Company Logo" class="logo-image" />
+        <span class="logo">Integrated Health Insurance Services</span>
+      </div>
+
+      <div class="lang-select-wrapper" aria-label="Language selector">
+        <button type="button" class="lang-button" data-lang="es">Español</button>
+        <button type="button" class="lang-button" data-lang="reset">Reset</button>
+      </div>
+
+      <button class="hamburger" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+        <svg class="hamburger-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <nav id="site-nav" class="nav" role="navigation" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="schedule.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <noscript>
+    <div class="main" role="note">
+      <p class="nojs-note">JavaScript is disabled. Language switching and booking enhancements require JavaScript.</p>
+    </div>
+  </noscript>
+
+  <!-- Main content (unchanged) -->
+  <main class="main">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Helping You Navigate Medicare, Covered California & More – With Clarity, Care, and Confidence.</h1>
+          <p class="hero-subtitle">Personalized guidance for individuals and families to make informed Medicare choices.</p>
+          <a href="https://calendar.google.com/..." class="cta-button">Book an Appointment Today!</a>
+        </div>
+        <div class="hero-image">
+          <img src="Guido-Bucheli.webp" alt="Healthcare Assistance" />
+        </div>
+      </div>
+    </section>
+
+  <!-- Services -->
+<section class="services" aria-labelledby="services-title">
+  <h2 id="services-title" class="sr-only">Our Services</h2>
+
+  <article class="service-card" id="medicare">
+    <h3>Medicare</h3>
+    <p>Clear explanations, enrollment help, and plan comparisons.</p>
+    <div class="card-links">
+      <a class="nav-link" href="https://www.medicare.gov/">Learn more →</a>
+      <a class="nav-link" target="_blank" rel="noopener" 
+         href="http://hhs.gov/answers/medicare/index.html">FAQ ↗</a>
+    </div>
+  </article>
+
+  <article class="service-card" id="covered-california">
+    <h3>Covered California</h3>
+    <p>We help individuals and families find affordable health coverage.</p>
+    <div class="card-links">
+      <a class="nav-link" href="https://www.coveredca.com/">Learn more →</a>
+      <a class="nav-link" target="_blank" rel="noopener" 
+         href="https://www.coveredca.com/support/getting-started/">FAQ ↗</a>
+    </div>
+  </article>
+
+  <article class="service-card" id="dental-vision">
+    <h3>Dental &amp; Vision Insurance</h3>
+    <p>Protect your smile and your sight.</p>
+    <div class="card-links">
+      <a class="nav-link" href="https://www.vsp.com/">Learn more →</a>
+      <a class="nav-link" target="_blank" rel="noopener" 
+         href="https://www.coveredca.com/dental/family/">Dental FAQ ↗</a>
+      <a class="nav-link" target="_blank" rel="noopener" 
+         href="https://www.vspdirect.com/4CA/faq">Vision FAQ ↗</a>
+    </div>
+  </article>
+
+  <article class="service-card" id="cancer-insurance">
+    <h3>Cancer Insurance</h3>
+    <p>Supplemental protection for unexpected medical costs.</p>
+    <div class="card-links">
+      <a class="nav-link" href="services.html#cancer-insurance">Learn more →</a>
+      <a class="nav-link" target="_blank" rel="noopener" 
+         href="https://www.medicare.gov/publications/11931-medicare-coverage-of-cancer-treatment-services.pdf">FAQ ↗</a>
+    </div>
+  </article>
+
+  <article class="service-card" id="final-expense">
+    <h3>Final Expense Insurance</h3>
+    <p>Affordable coverage for end-of-life expenses.</p>
+    <div class="card-links">
+      <a class="nav-link" href="services.html#final-expense">Learn more →</a>
+      <a class="nav-link" target="_blank" rel="noopener" 
+         </a> <!-- href="https://www.policygenius.com/final-expense-insurance/"> -->FAQ ↗</a>
+    </div>
+  </article>
+
+  <article class="service-card" id="annuities">
+    <h3>Annuities</h3>
+    <p>Retirement income options with guaranteed growth and security.</p>
+    <div class="card-links">
+      <a class="nav-link" href="services.html#annuities">Learn more →</a>
+      <a class="nav-link" target="_blank" rel="noopener" 
+         href="https://content.naic.org/consumer/consumer-faqs-annuities">FAQ ↗</a>
+    </div>
+  </article>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Integrated Health Insurance Services • Woodland, CA
+  </footer>
+
+  <!-- Scripts  -->
+  <script>
+    // Year stamp
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    (function () {
+      const btn = document.querySelector('.hamburger');
+      const nav = document.getElementById('site-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('show');
+      });
+    })();
+
+    // Language buttons logic (Español + Reset) — same as schedule page
+    (function(){
+      const KEY = 'preferred_lang';
+      const PAGE_LANG = 'en';
+      const COOKIE_NAME = 'googtrans';
+
+      function setCookie(name, value) {
+        const expires = new Date(Date.now() + 365*24*60*60*1000).toUTCString();
+        document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+        const parts = location.hostname.split('.');
+        if (parts.length > 1) {
+          const root = '.' + parts.slice(-2).join('.');
+          document.cookie = `${name}=${value}; expires=${expires}; path=/; domain=${root}`;
+        }
+      }
+      function clearCookie(name) {
+        const expires = 'Thu, 01 Jan 1970 00:00:00 GMT';
+        document.cookie = `${name}=; expires=${expires}; path=/`;
+        const parts = location.hostname.split('.');
+        if (parts.length > 1) {
+          const root = '.' + parts.slice(-2).join('.');
+          document.cookie = `${name}=; expires=${expires}; path=/; domain=${root}`;
+        }
+      }
+
+      function getTranslateSelect() {
+        return document.querySelector('#google_translate_element select.goog-te-combo');
+      }
+
+      function applyLanguage(lang) {
+        if (lang === 'reset') {
+          clearCookie(COOKIE_NAME);
+          localStorage.removeItem(KEY);
+          const sel = getTranslateSelect();
+          if (sel) {
+            sel.value = PAGE_LANG;
+            sel.dispatchEvent(new Event('change'));
+            setTimeout(() => location.reload(), 200);
+          } else {
+            location.reload();
+          }
+          return;
+        }
+
+        const official = getTranslateSelect();
+        if (official) {
+          if (official.value !== lang) {
+            official.value = lang;
+            official.dispatchEvent(new Event('change'));
+          }
+          localStorage.setItem(KEY, lang);
+          setCookie(COOKIE_NAME, `/${PAGE_LANG}/${lang}`);
+          return;
+        }
+
+        // Fallback if widget never becomes available
+        setCookie(COOKIE_NAME, `/${PAGE_LANG}/${lang}`);
+        localStorage.setItem(KEY, lang);
+        location.reload();
+      }
+
+      function whenTranslateReady(cb) {
+        const tryNow = () => {
+          const sel = getTranslateSelect();
+          if (sel) { cb(sel); return true; }
+          return false;
+        };
+        if (tryNow()) return;
+        const obs = new MutationObserver(() => { if (tryNow()) obs.disconnect(); });
+        obs.observe(document.documentElement, { childList: true, subtree: true });
+      }
+
+      function updateButtonsUI(current) {
+        document.querySelectorAll('.lang-button').forEach(btn => {
+          const active = (current !== 'en' && btn.dataset.lang === current);
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        // Wire up buttons
+        document.querySelectorAll('.lang-button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            applyLanguage(btn.dataset.lang);
+            if (btn.dataset.lang === 'reset') {
+              updateButtonsUI('en');
+            } else {
+              updateButtonsUI(btn.dataset.lang);
+            }
+          });
+        });
+
+        // Respect saved choice
+        whenTranslateReady(() => {
+          const saved = localStorage.getItem(KEY);
+          if (saved && saved !== 'en') {
+            applyLanguage(saved);
+            updateButtonsUI(saved);
+          } else {
+            updateButtonsUI('en');
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
