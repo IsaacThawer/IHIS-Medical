@@ -217,39 +217,63 @@ body.body {
 
 .services {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
 }
+
 .service-card {
   background: var(--panel);
-  padding: 1.5rem;
-  border-radius: 0.75rem;
+  padding: 2.5rem;
+  border-radius: 1rem;
   box-shadow: var(--panel-shadow);
-  margin: 0%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
 }
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
 .service-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 800;
-  margin: 0 0 0.5rem 0;
-  width: 70%;
+  margin: 0 0 1rem 0;
+  width: 85%;
   color: var(--teal);
+  line-height: 1.3;
+  position: relative;
 }
+
+.service-card h3::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--teal);
+  margin-top: 0.75rem;
+  border-radius: 2px;
+}
+
 .service-card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--muted);
-  margin: .25rem 0;
-  width: 70%;
+  margin: .5rem 0;
+  width: 85%;
+  line-height: 1.6;
 }
 
 /* two side-by-side centered cards */
 .services.two-locations {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   justify-content: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding-bottom: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
 }
 
 .card-note { margin: .75rem 0 1rem 0; color: #374151; }

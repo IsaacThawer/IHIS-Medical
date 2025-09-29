@@ -4,8 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Our Services | Integrated Health Insurance Services</title>
-
+  <!-- Primary SEO Info -->
+  <meta name="description" content="Independent Medicare & health insurance help in Woodland, CA. Free plan comparisons for Medicare, Covered California, dental, vision, cancer & final expense." />
+      <link rel="canonical" href="https://ihi-services.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Medicare & Health Insurance Help in Woodland, CA" />
+    <meta property="og:description" content="Free guidance for Medicare, Covered California, dental & vision, cancer and final expense insurance." />
+    <meta property="og:url" content="https://ihi-services.com/" />
+    <meta property="og:image" content="https://ihi-services.com/Images/og-cover.jpg" />
+  
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- SEO JSON SCRIPT-->
+  <script type="application/ld+json"> {
+    "@context":"https://schema.org",
+    "@type":"InsuranceAgency",
+    "name":"Integrated Health Insurance Services",
+    "image":"https://ihi-services.com/Images/Company-Logo.png",
+    "url":"https://ihi-services.com/",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Woodland",
+      "addressRegion":"CA",
+      "postalCode":"95695",
+      "addressCountry":"US"
+    },
+    "areaServed": ["Woodland CA","Yolo County","Greater Sacramento"],
+    "priceRange":"$"
+  }
+  </script>
+
 
   <!-- Google Translate (same loader as other pages) -->
   <script>
@@ -34,7 +62,7 @@
 <header class="header" role="banner">
     <div class="header-container">
       <div class="brand">
-        <img src="Company-Logo.png" alt="Company Logo" class="logo-image" />
+        <img src="Images/Company-Logo.png" alt= "Company Logo" class="logo-image" />
         <span class="logo">Integrated Health Insurance Services</span>
       </div>
 
@@ -72,9 +100,8 @@
         <div class="hero-text">
           <h1 class="hero-title">Explore Our Services</h1>
           <p class="hero-subtitle">
-            Clear guidance for Medicare, Covered California, Dental &amp; Vision, Cancer Insurance, Final Expense, and Annuities.
+            Clear, personalized guidance to compare plans, understand benefits, and enroll with confidence. We help with Medicare, Covered California &amp; subsidy eligibility, dental &amp; vision, cancer supplemental coverage, final expense insurance, and annuities — offering one-on-one consultations, and ongoing support to find the most affordable, appropriate coverage for you.
           </p>
-          <a href="schedule.html" class="cta-button">Schedule a Free Consultation</a>
         </div>
         <div class="hero-image">
           <img src="Guido-Bucheli.webp" alt="Advisor helping client choose a plan" />
@@ -115,7 +142,7 @@
         </ul>
         <div class="card-links">
           <a class="nav-link" href="schedule.html">Book now →</a>
-          <a class="nav-link" target="_blank" rel="noopener" href="https://www.medicare.gov/basics/get-started-with-medicare/medicare-faqs">FAQ ↗</a>
+          <a class="nav-link" target="_blank" rel="noopener" href="https://www.medicare.gov/basics/get-started-with-medicare/using-medicare/helpful-tools">FAQ ↗</a>
         </div>
       </article>
 
@@ -131,7 +158,7 @@
         </ul>
         <div class="card-links">
           <a class="nav-link" href="schedule.html">Book now →</a>
-          <a class="nav-link" target="_blank" rel="noopener" href="https://www.coveredca.com/faq/">FAQ ↗</a>
+          <a class="nav-link" target="_blank" rel="noopener" href="https://www.coveredca.com/support/getting-started/">FAQ ↗</a>
         </div>
       </article>
 
@@ -214,7 +241,7 @@
     © <span id="year"></span> Integrated Health Insurance Services • Woodland, CA
   </footer>
 
-  <!-- Scripts (same behavior as other pages) -->
+  <!-- Scripts -->
   <script>
     // Year stamp
     document.getElementById('year').textContent = new Date().getFullYear();

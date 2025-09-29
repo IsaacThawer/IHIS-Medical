@@ -4,11 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us | Integrated Health Insurance Services</title>
+  <!-- Primary SEO Info -->
+  <meta name="description" content="Independent Medicare & health insurance help in Woodland, CA. Free plan comparisons for Medicare, Covered California, dental, vision, cancer & final expense." />
+      <link rel="canonical" href="https://ihi-services.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Medicare & Health Insurance Help in Woodland, CA" />
+    <meta property="og:description" content="Free guidance for Medicare, Covered California, dental & vision, cancer and final expense insurance." />
+    <meta property="og:url" content="https://ihi-services.com/" />
+    <meta property="og:image" content="https://ihi-services.com/Images/og-cover.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- SEO JSON SCRIPT-->
+  <script type="application/ld+json"> {
+    "@context":"https://schema.org",
+    "@type":"InsuranceAgency",
+    "name":"Integrated Health Insurance Services",
+    "image":"https://ihi-services.com/Images/Company-Logo.png",
+    "url":"https://ihi-services.com/",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Woodland",
+      "addressRegion":"CA",
+      "postalCode":"95695",
+      "addressCountry":"US"
+    },
+    "areaServed": ["Woodland CA","Yolo County","Greater Sacramento"],
+    "priceRange":"$"
+  }
+  </script>
 
   <!-- Your shared site styles -->
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- (Optional) Keep Tailwind for the main content layout -->
+  <!-- Tailwind for the main content layout -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Translate loader (same as other pages) -->
@@ -34,11 +62,12 @@
   </noscript>
 </head>
 <body class="body">
-  <!-- Header (IDENTICAL to your shared navbar) -->
+
+  <!-- Header  -->
   <header class="header" role="banner">
     <div class="header-container">
       <div class="brand">
-        <img src="Company-Logo.png" alt="Company Logo" class="logo-image" />
+        <img src="Images/Company-Logo.png" alt= "Company Logo" class="logo-image" />
         <span class="logo">Integrated Health Insurance Services</span>
       </div>
 
@@ -68,17 +97,17 @@
     </div>
   </noscript>
 
-<!-- MAIN CONTENT (kept your Tailwind layout) -->
+<!-- MAIN CONTENT  -->
 <main class="max-w-7xl mx-auto px-4 py-12">
     <!-- HERO SECTION -->
     <section class="bg-teal-700 text-white py-20 rounded-lg shadow-lg mb-12">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
             <div class="md:w-1/2 flex justify-center order-1 md:order-none">
-                <img src="Guido-Bucheli.webp" alt="Our Team" class="w-full max-w-sm rounded-lg shadow-lg" />
+                <img src="Images/IMG_3792.jpeg" alt="Our Team" class="w-full max-w-sm rounded-lg shadow-lg" />
             </div>
             <div class="md:w-1/2 order-2 md:order-none">
                 <h1 class="text-5xl font-bold leading-tight mb-6">
-                   Meet <b>Guido Bucheli</b>
+                   Meet <i><ul>Guido Bucheli</i></ul>
                 </h1>
                 <p class="text-lg mb-8">
                     Guido has been serving the insurance needs of families and businesses for over 27 years. As one of the founders of Integrated Health Insurance Services LLC, he now focuses on Medicare, Covered California, and retirement protection products. Guido is bilingual (English/Spanish) and passionate about helping the Hispanic community understand their options with confidence. He holds a Health & Life License (CA License #0B99537) and an AHIP Medicare Certification.
@@ -86,16 +115,16 @@
             </div>
         </div>
 
-        <!-- NEW PERSON SECTION (photo above text on mobile, text left on desktop) -->
+        <!-- MARLENE SECTION -->
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 mt-12">
             <!-- image FIRST on mobile -->
             <div class="md:w-1/2 flex justify-center order-1 md:order-2">
-                <img src="New-Person-Photo.webp" alt="New Team Member" class="w-full max-w-sm rounded-lg shadow-lg" />
+                <img src="Images/IMG_0008.jpeg" alt="New Team Member" class="w-full max-w-sm rounded-lg shadow-lg" />
             </div>
             <!-- text SECOND on mobile -->
             <div class="md:w-1/2 order-2 md:order-1 pl-12 md:pl-20">
                 <h2 class="text-5xl font-bold leading-tight mb-6">
-                    Meet Nora Marlene Rodriguez
+                    Meet <i><ul>Nora Marlene Rodriguez</i></ul>
                 </h2>
                 <p class="text-lg mb-8">
                     Nora Marlene Rodriguez brings 10 years of experience in client support and health services. She is committed to creating a welcoming environment for every client and ensuring that each person feels comfortable and confident in their healthcare decisions. BA in communications, CLMS Leave management, AHIP Medicare certification  and Health California License # 2081089.
@@ -113,8 +142,7 @@
 
             </p>
             <p class="text-gray-700">
-                <!-- Add information -->
-            </p>
+              Whether you’re turning 65, retiring, or exploring health insurance options for the first time, we’re here to guide you every step of the way. At Integrated Health Insurance Services LLC, you’re not just a policy number—you’re family. Let us help you find the coverage that fits your life and budget. 
         </div>
         <div class="bg-white shadow rounded-lg p-8 flex flex-col justify-center">
             <h2 class="text-2xl font-bold mb-4">Why Choose Us?</h2>
@@ -123,13 +151,70 @@
                     <span class="mr-2 text-xl">★</span>
                     With over 25 years of insurance experience, our bilingual team proudly serves the Woodland, CA community and beyond. We specialize in guiding you through complex insurance decisions with a clear, compassionate approach.
                 </li>
-                <li class="list-disc" style="list-style-type: circle;">Local expertise and community focus</li>
-                <li class="list-disc" style="list-style-type: circle;">Transparent, unbiased advice</li>
-                <li class="list-disc" style="list-style-type: circle;">Ongoing support throughout your Medicare journey</li>
+                <li class="flex items-start gap-4 p-3 bg-teal-50 rounded-md border-l-4 border-teal-600">
+                  <span class="text-teal-600 mt-0.5" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  </span>
+                  <div>
+                  <span class="block font-semibold text-teal-700">Local expertise and community focus</span>
+                  <span class="block text-sm text-gray-700">Rooted in Woodland, we understand local needs and resources.</span>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4 p-3 bg-white rounded-md border border-gray-100 shadow-sm">
+                  <span class="text-teal-600 mt-0.5" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20l9-12H3l9 12z"/></svg>
+                  </span>
+                  <div>
+                  <span class="block font-semibold text-teal-700">Transparent, unbiased advice</span>
+                  <span class="block text-sm text-gray-700">Clear comparisons and recommendations with no pressure.</span>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4 p-3 bg-teal-50 rounded-md border-l-4 border-teal-600">
+                  <span class="text-teal-600 mt-0.5" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-6"/><path d="M5 11l7-7 7 7"/></svg>
+                  </span>
+                  <div>
+                  <span class="block font-semibold text-teal-700">Ongoing support throughout your Medicare journey</span>
+                  <span class="block text-sm text-gray-700">Help at enrollment and beyond — we stay with you as needs change.</span>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4 p-3 bg-white rounded-md border border-gray-100 shadow-sm">
+                  <span class="text-teal-600 mt-0.5" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+                  </span>
+                  <div>
+                  <span class="block font-semibold text-teal-700">Comprehensive plan comparisons</span>
+                  <span class="block text-sm text-gray-700">Side‑by‑side reviews to find the best coverage and price for you.</span>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4 p-3 bg-teal-50 rounded-md border-l-4 border-teal-600">
+                  <span class="text-teal-600 mt-0.5" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><circle cx="12" cy="7" r="4"/></svg>
+                  </span>
+                  <div>
+                  <span class="block font-semibold text-teal-700">Bilingual services</span>
+                  <span class="block text-sm text-gray-700">English and Spanish support to make communication easier.</span>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4 p-3 bg-white rounded-md border border-gray-100 shadow-sm">
+                  <span class="text-teal-600 mt-0.5" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+                  </span>
+                  <div>
+                  <span class="block font-semibold text-teal-700">Free consultations with no obligation</span>
+                  <span class="block text-sm text-gray-700">Get started with a complimentary review — no commitments required.</span>
+                  </div>
+                </li>
             </ul>
         </div>
     </section>
 </main>
+
 <!-- Footer -->
   <footer class="footer">
     © <span id="year"></span> Integrated Health Insurance Services • Woodland, CA

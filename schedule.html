@@ -4,8 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Schedule your FREE consultation today!</title>
-
+  <!-- Primary SEO Info -->
+  <meta name="description" content="Independent Medicare & health insurance help in Woodland, CA. Free plan comparisons for Medicare, Covered California, dental, vision, cancer & final expense." />
+      <link rel="canonical" href="https://ihi-services.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Medicare & Health Insurance Help in Woodland, CA" />
+    <meta property="og:description" content="Free guidance for Medicare, Covered California, dental & vision, cancer and final expense insurance." />
+    <meta property="og:url" content="https://ihi-services.com/" />
+    <meta property="og:image" content="https://ihi-services.com/Images/og-cover.jpg" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- SEO JSON SCRIPT-->
+  <script type="application/ld+json"> {
+    "@context":"https://schema.org",
+    "@type":"InsuranceAgency",
+    "name":"Integrated Health Insurance Services",
+    "image":"https://ihi-services.com/Images/Company-Logo.png",
+    "url":"https://ihi-services.com/",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Woodland",
+      "addressRegion":"CA",
+      "postalCode":"95695",
+      "addressCountry":"US"
+    },
+    "areaServed": ["Woodland CA","Yolo County","Greater Sacramento"],
+    "priceRange":"$"
+  }
+  </script>
+  <!-- END SEO JSON SCRIPT-->
+
 
   <!-- Google Translate loader -->
   <script>
@@ -30,11 +58,12 @@
   </noscript>
 </head>
 <body class="body">
+
   <!-- Header -->
   <header class="header" role="banner">
   <div class="header-container">
     <div class="brand">
-      <img src="Company-Logo.png" alt="Company Logo" class="logo-image" />
+      <img src="Images/Company-Logo.png" alt= "Company Logo" class="logo-image" />
       <span class="logo">Integrated Health Insurance Services</span>
     </div>
 
@@ -51,7 +80,7 @@
 </button>
 
 
-    <!-- moved in here -->
+    <!-- Nav -->
     <nav id="site-nav" class="nav" role="navigation" aria-label="Primary">
       <a class="nav-link" href="index.html">Home</a>
       <a class="nav-link" href="about.html">About</a>
@@ -78,10 +107,10 @@
                         Schedule your <em>FREE</em>  consultation today!
           </h1>
           <p class="hero-subtitle">
-            Fill out the preferred location and reserve a time time. You’ll be redirected to our secure Google booking page.
+            Fill out the preferred location and reserve a time. You’ll be redirected to our secure Google booking page.
           </p>
           <!-- CHANGE GOOGLE APPOINTMENTS LINK TO SUIT GUDIO USE -->
-          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3FurIpcwSwjVFPqcTAjE2Jq9ZJ41wQY6yzlBFPc_l4fWW7_mYfV0nxJ4oTMg7a5xbbItAJtFrk" class="cta-button">See Locations &amp; Times</a>
+          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3FurIpcwSwjVFPqcTAjE2Jq9ZJ41wQY6yzlBFPc_l4fWW7_mYfV0nxJ4oTMg7a5xbbItAJtFrk" class="cta-button">See Available Times</a>
         </div>
         <div class="hero-image">
           <img src="Guido-Bucheli.webp" alt="Friendly staff assisting with appointments" />
@@ -89,27 +118,29 @@
       </div>
     </section>
 
-    <!-- Locations / Booking Cards -->
+
     <section id="locations" class="services two-locations" aria-labelledby="locations-title">
       <h2 id="locations-title" class="sr-only">Locations</h2>
 
-      <!-- Location A -->
-       <article class="service-card" aria-labelledby="loc-a-title">        <h3 id="loc-a-title">Office</h3>
-        <p>123 Main St, Woodland, CA 95695</p>
-        <p><strong>Hours:</strong> Mon–Fri, 9:00 AM–5:00 PM</p>
-        <p class="card-note">Book here for appointments at our Downtown location.</p>
-        <a class="cta-button" target="_blank" rel="noopener"
-           href="https://calendar.google.com/calendar/u/0/appointments/schedules/REPLACE_WITH_DOWNTOWN_LINK">
-          Book Downtown
-        </a>
+      <!-- Information Tag -->
+       <article class="service-card" aria-labelledby="loc-a-title">        
+        <h3 id="loc-a-title">Office details will be sent after booking</h3>
+          <p><strong>Hours:</strong> Mon–Fri, 9:00 AM–5:00 PM</p>
+          <p class="card-note">   </p>
+            <a class="cta-button" target="_blank" rel="noopener"
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/REPLACE_WITH_DOWNTOWN_LINK">
+              Click Here for Appointments!
+            </a>
+            <!-- Replace with actual address 
         <div class="card-links">
           <a class="nav-link" target="_blank" rel="noopener"
              href="https://maps.google.com/?q=123+Main+St+Woodland+CA+95695">Open in Google Maps →</a>
         </div>
+        -->
       </article>
     </section> 
 
-    <!-- Quick Info / Policies -->
+    <!-- Required Materials -->
     <section class="service-card stack-gap">
       <h3>What to Bring</h3>
       <p class="hero-subtitle">
@@ -123,12 +154,20 @@
        </p>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Card -->
+
     <section class="service-card stack-gap">
       <h3>Need Help Booking?</h3>
       <p>
-        Email:<a class="nav-link">Guido.Bucheli@IHI-Services.com</a> ·
-        Phone: <a class="nav-link" href="tel:+15305551234">(530)-650-9218</a>
+        Email:
+        <a class="nav-link cta-button" href="mailto:Guido.Bucheli@IHI-Services.com?subject=Free%20Consultation%20Request" role="button" aria-label="Email Guido Bucheli">
+          Guido.Bucheli@IHI-Services.com
+        </a> 
+        <br />
+        Phone:
+        <a class="nav-link cta-button" href="tel:+15305551234">(530)-650-9218
+
+        </a>
       </p>
     </section>
   </main>
@@ -138,7 +177,7 @@
     © <span id="year"></span> Integrated Health Insurance Services • Woodland, CA
   </footer>
 
-  <!-- Scripts -->
+  <!-- Script for translation buttons -->
   <script>
     // Year stamp
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -260,5 +299,42 @@
       });
     })();
   </script>
+  <!-- Script to keep Google Calendar in Spanish -->
+<script>
+(function(){
+  const LANG_KEY = 'preferred_lang';
+
+  function getPreferred() {
+    const saved = localStorage.getItem(LANG_KEY);
+    if (saved) return saved;
+    const m = document.cookie.match(/(?:^|;\s*)googtrans=\/[^\/]+\/([^;]+)/);
+    return m ? m[1] : 'en';
+  }
+
+  function addHlParamIfGoogle(href, lang) {
+    if (!lang || lang === 'en') return href;
+    try {
+      const u = new URL(href, location.href);
+      // target google calendar only
+      if (u.hostname.includes('google.')) {
+        if (!u.searchParams.has('hl')) u.searchParams.set('hl', lang);
+        return u.toString();
+      }
+    } catch(e) {}
+    return href;
+  }
+
+  function updateGoogleLinks() {
+    const lang = getPreferred();
+    if (!lang || lang === 'en') return;
+    document.querySelectorAll('a[href*="google.com"]').forEach(a => {
+      a.href = addHlParamIfGoogle(a.href, lang);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', updateGoogleLinks);
+})();
+</script>
+
 </body>
 </html>
