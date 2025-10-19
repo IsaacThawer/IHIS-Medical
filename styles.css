@@ -2,7 +2,7 @@
    Base / Theme
    ========================= */
 :root{
-  --teal:#008080;       /* primary */
+  --teal:#0F766E;       /* primary */
   --white:#FDFEFE;      /* soft white */
   --coral:#FF6F61;      /* accent */
   --ink:#111827;        /* text */
@@ -72,6 +72,7 @@ body.body {
   font-size: 1rem;    /* reduced */
   font-weight: 600;
 }
+
 
 /* Hamburger visible on mobile-first, hidden >=768px */
 .hamburger {
@@ -198,6 +199,51 @@ body.body {
   margin: 0.25rem 0 1rem 0;
 }
 
+/* NEW: hero badge for schedule page */
+.hero-badge{
+  background: radial-gradient(1200px 400px at 10% -10%, rgba(0,128,128,.18), transparent),
+              linear-gradient(180deg, #ffffff, #f6fbfb);
+  border-radius: 1rem; box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  margin: 1.25rem auto; padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+.hero-badge .hero-wrap{
+  max-width: 64rem; margin: 0 auto; text-align: center;
+  display: grid; gap: 1rem; justify-items: center;
+}
+.hero-badge .hero-badge-icon{
+  width: 72px; height: 72px; color: var(--teal);
+  display:flex; align-items:center; justify-content:center;
+  background: rgba(0,128,128,.08); border: 2px solid rgba(0,128,128,.18);
+  border-radius: 16px;
+}
+.hero-badge .cal{ width: 44px; height: 44px; }
+.hero-badge .hero-title{
+  font-family: 'Arial Black','Arial Narrow',Arial,sans-serif;
+  font-weight: 800; font-style: italic; line-height: 1.1;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: .25rem 0;
+  color: var(--ink);
+}
+.hero-badge .hero-title em{ color: var(--teal); font-style: normal; text-decoration: underline; text-decoration-thickness: 0.12em; }
+.hero-badge .hero-subtitle{
+  max-width: 50ch; color:#374151; font-size: 1rem; margin: 0 auto .5rem;
+}
+/* CTA button for schedule page */
+.hero-badge .cta-button{
+  background: var(--teal);
+  color: var(--white);
+  border: 2px solid transparent;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.hero-badge .cta-button:hover,
+.hero-badge .cta-button:focus-visible{
+  background: #007373;         /* slightly darker teal */
+  color: var(--white);
+  border-color: #006968;        /* subtle ring */
+  box-shadow: 0 6px 18px rgba(0,128,128,.35);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
 .cta-button {
   background: var(--white);
   color: var(--teal);
@@ -265,6 +311,20 @@ body.body {
   line-height: 1.6;
 }
 
+/* About page cards same style as service cards */
+.about-card {
+  background: #f9fafb; /* same as var(--bg) for the gray look */
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--panel-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
 /* two side-by-side centered cards */
 .services.two-locations {
   display: grid;
@@ -282,15 +342,182 @@ body.body {
 /* =========================
    Footer
    ========================= */
+/* Footer */
 .footer {
-  background-color: #f3f4f6;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--muted);
+  background: var(--panel);
+  box-shadow: var(--panel-shadow);
+  border-top: 1px solid #e5e7eb;
+  margin-top: 2rem;
+  color: var(--ink);
 }
+
+.footer a { color: var(--teal); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.brand-mini {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  font-size: 0.95rem;
+}
+.logo-mini {
+  width: 40px; height: 40px; object-fit: contain;
+  border-radius: .5rem; box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+
+.footer-contact {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.footer-legal {
+  padding: 1rem 0;
+  display: grid;
+  gap: .75rem;
+}
+
+.cms-disclaimer {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: .75rem .9rem;
+  border-radius: .5rem;
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+.policy {
+  border: 1px solid #e5e7eb;
+  border-radius: .6rem;
+  background: #fff;
+  overflow: hidden;
+}
+.policy + .policy { margin-top: .5rem; }
+
+.policy > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: .8rem .95rem;
+  display: flex; align-items: center; gap: .6rem;
+  font-weight: 600;
+}
+.policy > summary::-webkit-details-marker { display: none; }
+
+.summary-icon { font-size: 1.1rem; }
+.summary-meta {
+  margin-left: auto; font-weight: 500; color: var(--muted); font-size: .9rem;
+}
+
+.policy-content {
+  padding: .9rem .95rem 1rem;
+  display: grid; gap: .5rem;
+  max-height: 320px; /* keeps footer compact */
+  overflow: auto;    /* scroll long policy text inside */
+}
+.policy-content h4 { margin: .2rem 0; font-size: 1rem; }
+.policy-content p, .policy-content li { font-size: .95rem; color: #374151; }
+
+.footer-bottom {
+  padding-top: .75rem;
+  border-top: 1px dashed #e5e7eb;
+  display: flex; align-items: center; gap: .5rem; flex-wrap: wrap;
+  font-size: .95rem;
+}
+.footer-bottom .mini-link { font-size: .95rem; }
+.footer-bottom .dot { opacity: .6; }
+
+@media (max-width: 640px) {
+  .footer-top { flex-direction: column; align-items: flex-start; }
+  .summary-meta { display: none; } /* keep summary compact on phones */
+  .footer-contact { gap: .6rem; }
+}
+
 .mobile-only { display: block; }
 
+/* Teal hero background, rounded, shadow, spacing
+   (replaces: bg-teal-700 text-white py-20 rounded-lg shadow-lg mb-12) */
+.hero.hero-teal {
+  background: var(--teal);
+  color: var(--white);
+  padding: 5rem 1rem;              /* ~py-20 */
+  border-radius: 1rem;             /* rounded-lg */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* shadow-lg */
+  margin-bottom: 3rem;             /* mb-12 */
+}
+
+/* Inner layout container
+   (replaces: max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16) */
+.hero-container {
+  max-width: 1200px;               /* ~max-w-7xl */
+  margin: 0 auto;                  /* mx-auto */
+  padding: 0 1rem;                 /* px-4 */
+  display: flex;
+  flex-direction: column;          /* flex-col */
+  align-items: center;             /* items-center */
+  justify-content: space-between;  /* justify-between */
+  gap: 2.5rem;                     /* gap-10 */
+}
+
+/* Media (image) column */
+.hero-media {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Portrait image (replaces: w-full max-w-sm rounded-lg shadow-lg) */
+.hero-portrait {
+  width: 100%;
+  max-width: 28rem;                /* ~max-w-sm */
+  border-radius: .75rem;           /* rounded-lg */
+  box-shadow: 0 10px 24px rgba(0,0,0,.25); /* shadow-lg */
+  object-fit: cover;
+}
+
+/* Text column */
+.hero-text {
+  flex: 1 1 0;
+}
+
+/* Larger headline (replaces: text-5xl font-bold leading-tight mb-6) */
+.hero.hero-teal .hero-title,
+.hero-container .hero-title {
+  font-size: clamp(2rem, 5.5vw, 3rem); /* ~text-5xl */
+  font-weight: 800;                    /* font-bold */
+  line-height: 1.15;                   /* leading-tight-ish */
+  margin: 0 0 1.5rem 0;                /* mb-6 */
+}
+
+/* Subhead (replaces: text-lg mb-8) */
+.hero.hero-teal .hero-subtitle,
+.hero-container .hero-subtitle {
+  font-size: 1.125rem;                 /* text-lg */
+  line-height: 1.7;
+  margin: 0 0 2rem 0;                  /* mb-8 */
+}
+
+/* Responsive: switch to row and increase gap at md+ (replaces: md:flex-row md:gap-16) */
+@media (min-width: 768px){
+  .hero-container {
+    flex-direction: row;               /* md:flex-row */
+    gap: 4rem;                         /* md:gap-16 */
+  }
+}
 
 /* =========================
    Responsive
@@ -369,11 +596,11 @@ body.body {
   /* Tighter, balanced branding on mobile */
   .logo-image { width: 48px; height: 48px; }
   .logo {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: clamp(.78rem, 2.9vw, .95rem); /* shrink more on small widths */
-  font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(.78rem, 2.9vw, .95rem); /* shrink more on small widths */
+    font-weight: 600;
   }
 
   /* Hamburger pinned to top-right */
